@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AT Digital Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <div class="logo d-flex align-items-center gap-3">
+          <img src="White Secondary Logo.png" alt="AT DIGITAL Logo" />
+          <h2><span>AT DIGITAL</span></h2>
+        </div>
+      <nav class="d-none d-md-flex">
+        <a href="#services" class="nav-link text-white px-3">SERVICES</a>
+        <a href="#about" class="nav-link text-white px-3">ABOUT US</a>
+        <a href="#contact" class="nav-link text-white px-3">CONTACT</a>
+        <a href="#careers" class="nav-link text-white px-3">CAREERS</a>
+      </nav>
+      <button class="navbar-toggler d-md-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        ☰
+      </button>
+    </div>
+    <div class="collapse" id="mobileMenu">
+      <nav class="bg-primary text-center" style="background-color: white;">
+        <a href="#home" class="nav-link text-white py-2">HOME</a>
+        <a href="#services" class="nav-link text-white py-2">SERVICES</a>
+        <a href="#about" class="nav-link text-white py-2">ABOUT US</a>
+        <a href="#contact" class="nav-link text-white py-2">CONTACT US</a>
+        <a href="#careers" class="nav-link text-white py-2">CAREERS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+      <div class="hero-box p-5 rounded shadow">
+        <h2 class="hero-heading mb-4">We Crush Your Competitors, Goals, And Sales Records - Without The B.S.</h2>
+        <button class="btn btn-cta mt-3 px-4 py-2">Get Free Consultation</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+      <!-- First Service Item -->
+      <div class="service-item left-align">
+        <div class="service-image">
+          <img src="image.png" alt="Web & Mobile App Development" />
+        </div>
+        <div class="service-content">
+          <h2>Web & Mobile App Development</h2>
+          <p>
+            Your web and mobile apps are pieces of the puzzle to grow your business.
+            We use frameworks that tailor content and engagement methods to respond
+            to different intents shown by your potential customers who interact with your
+            business online.
+          </p>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+  
+      <!-- Second Service Item -->
+      <div class="service-item right-align">
+        <div class="service-image">
+          <img src="image 2.png" alt="Digital Strategy Consulting" />
+        </div>
+        <div class="service-content">
+          <h2>Digital Strategy Consulting</h2>
+          <p>
+            Your digital strategy should complement the overall marketing strategy
+            of the company. In online marketing, each component will never work in isolation,
+            and every business needs a different mix. We provide a clear concept and strategic
+            overview to find the most efficient model for your business.
+          </p>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>    
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section py-5" >
+    <div class="container">
+      <h3 class="text-center mb-4" style="color: #6B3CC9;">Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+            onmouseover="this.style.backgroundColor='#FAF8FF';"
+            onmouseout="this.style.backgroundColor='#FAF8FF';">
+            Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+              onmouseover="this.style.backgroundColor='#FAF8FF';"
+              onmouseout="this.style.backgroundColor='#FAF8FF';">
+                Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum.
+              </div>
+            </div>
+          </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+            onmouseover="this.style.backgroundColor='#FAF8FF';"
+            onmouseout="this.style.backgroundColor='#FAF8FF';">
+              Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Footer -->
+  <footer class="footer bg-primary text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold"><img src="White Secondary Logo.png" alt="AT DIGITAL Logo" />AT DIGITAL</h3>
+          <p>Your goal is our target. Not anything in between.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Our Technologies</h5>
+          <ul class="list-unstyled">
+            <li>ReactJS</li>
+            <li>Gatsby</li>
+            <li>NextJS</li>
+            <li>NodeJS</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li>Social Media Marketing</li>
+            <li>Web & Mobile App Development</li>
+            <li>Data & Analytics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>Privacy Policy | Terms & Conditions</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

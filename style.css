@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #7a7a7a;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff7700;
+    ;
+  }
+  .bg-primary {
+    background-color: #6B3CC9 !important; /* Bluish purple color */
+  }
+ 
+  
+  /* Hero Section */
+  #hero {
+    background: url('hero.png') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 0;
+    display: flex;
+  }
+  
+  .hero-box {
+    background: linear-gradient(256.73deg, #1CBDDD 27.86%, #4DCA79 100%);
+    backdrop-filter: blur(10px);
+    max-width: 330px;
+    max-height: 206px;
+  }
+  
+  #hero h2 {
+    font-size: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+  }
+  
+  .btn-secondary {
+    background-color: #F28D35;; /* Secondary Color */
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ff7700;;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  
+  .btn-cta {
+    background-color: #F28D35;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-cta:hover {
+    background-color: #FF7700;
+  }
+  
+/* Service Section Styles */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Base Layout for Service Items */
+  .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+  }
+  
+  /* Left-Aligned Image */
+  .service-item.left-align .service-image {
+    order: 0; /* Image first */
+  }
+  
+  .service-item.left-align .service-content {
+    order: 1; /* Content second */
+  }
+  
+  /* Right-Aligned Image */
+  .service-item.right-align .service-image {
+    order: 1; /* Image second */
+  }
+  
+  .service-item.right-align .service-content {
+    order: 0; /* Content first */
+  }
+  
+  /* Image Styling */
+  .service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Content Styling */
+  .service-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .service-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b3cc9;
+  }
+  
+  .service-content p {
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  .learn-more-btn {
+    background-color: #f28d35;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #e05729;
+  }
+  
+/* Footer Styling */
+.footer {
+    background-color: #6B3CC9; /* Purple background */
+    color: #ffffff;
+  }
+  
+  .footer h3, .footer h5 {
+    font-size: 1.5rem;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin: 5px 0;
+  }
+  
+  .footer p, .footer ul li {
+    font-size: 0.9rem;
+  }
+  
+  .footer p:last-child {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 20px;
+    }
+    
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    nav .nav-link {
+      padding: 10px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between logo and text */
+      }
+      
+      .logo img {
+        height: 50px; /* Adjust the height of the logo */
+        width: auto; /* Maintain aspect ratio */
+      }
+      
+      .logo span {
+        font-size: 1.8rem;
+        color: #fff; /* Adjust color as per your design */
+      }
+      @media (max-width: 768px) {
+        .logo img {
+          height: 40px; /* Smaller logo size for tablets */
+        }
+        #hero h2 {
+            font-size: 20px;
+          }
+      
+        .logo span {
+          font-size: 1.5rem; /* Adjust text size */
+        }
+      }
+      
+      @media (max-width: 375px) {
+        .logo img {
+          height: 30px; /* Even smaller for mobile */
+        }
+        #hero h2 {
+            font-size: 20px;
+          }
+        .logo span {
+          font-size: 1.2rem;
+        }
+      }
+
+/* FAQ Section */
+.faq-section .accordion-button {
+    background-color: #f8f9fa !important;
+    font-weight: bold;
+    color: #6B3CC9 !important;
+    border: none;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  
+  .faq-section .accordion-button:hover {
+    background-color: #6B3CC9 !important;
+    color: white !important;
+  }
+  
+  .faq-section .accordion-button:not(.collapsed) {
+    background-color: #6B3CC9 !important;
+    color: white !important;
+  }
+  
+  .faq-section .accordion-item {
+    border: 1px solid #6B3CC9 !important;
+  }
+  
+  .faq-section .accordion-item:hover .accordion-button {
+    background-color: #6B3CC9 !important;
+    color: white !important;
+  }
+  button.accordion-button:hover {
+    background-color: #6B3CC9 !important;
+    color: white !important;
+  }
+  
+  
+  }
+  
